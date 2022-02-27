@@ -13,5 +13,5 @@ Projeto fictício "Se liga nesse site" no formato Landing Page para prospecção
 Ao realizar o cadastro no site os dados do usuário são gravados em um protótipo de API REST. 
 
 ## Links Úteis: 
-[API criada com o Mockapi](https://621bdb97768a4e10209dfcc0.mockapi.io/api/v1/alunos) 
-[Deploy com Github Pages](https://priscilla-neves.github.io/pagina-web-se-liga-nesse-site/) 
+- [API criada com o Mockapi](https://621bdb97768a4e10209dfcc0.mockapi.io/api/v1/alunos) 
+- [Deploy com Github Pages](https://priscilla-neves.github.io/pagina-web-se-liga-nesse-site/) 
