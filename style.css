@@ -85,9 +85,7 @@ body {
   font-size: 20px;
   color: #2F2325;
   margin-right: 120px;
-  margin-top: 30px;
- 
-  
+  margin-top: 30px; 
 }
 
 .botao:hover {
@@ -112,8 +110,6 @@ body {
 }
 .navbar .active {
 	color: #ffaf53 !important;
-}
-.navbar .navbar-brand {
 }
 .navbar .nav-item {
 	margin: 0 5px;
@@ -180,7 +176,7 @@ body {
 	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 	background-color: #ECD6C4;
-  box-shadow: 4px 5px 4px rgba(243, 210, 210, 0.25);
+    box-shadow: 4px 5px 4px rgba(243, 210, 210, 0.25);
 	padding: 12px 45px;
 	font-size: 15px;
 	border-radius: 30px;
@@ -203,8 +199,6 @@ body {
 	padding-bottom: 40px;
   color: #eccc3a;
 }
-.conteudo-secundario-paragrafo {
-}
 .conteudo-secundario-paragrafo h2 {
 	margin-bottom: 5px;
   color: #eccc3a;
@@ -213,7 +207,7 @@ body {
   color: #ECD6C4;
 	padding-top: 20px;
 	font-weight: 300;
-	font-size: 14px;
+	font-size: 17px;
 	line-height: 25px;
 }
 
@@ -237,4 +231,18 @@ body {
 	background: linear-gradient(68.15deg, #F6836B 16.62%, #3f3d39 85.61%);
 	padding-top: 60px;
 	padding-bottom: 60px;
+}
+
+.ferramentas {
+	background: #f1eeea;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.ferramentas-titulo {
+	width: 100%;
+	padding-bottom: 40px;
+	color: #242322;
+	margin-bottom: 12px;
+	font-size: 25px;
 }
