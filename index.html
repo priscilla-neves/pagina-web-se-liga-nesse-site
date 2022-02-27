@@ -18,7 +18,8 @@
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="0">Início</a> </li>
           <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="1">Sobre</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="2">Cadastre-se</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="2">Ferramentas</a> </li>
+          <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="3">Cadastre-se</a> </li>
         </ul>
       </div>
     </div>
@@ -31,7 +32,7 @@
         <div class="col-sm">
             <h1 class="conteudo-principal-item-titulo">Olá Dev, você quer criar um site mais não sabe por onde começar?</h1>
             <h2 class="conteudo-principal-item-subtitulo">Calma, não buga! &#x1F632 <br> Com o Projeto "Se liga nesse Site ", você conseguirá desenvolver sites intuivos, dinâmicos e engajados em até uma semana e de forma <mark style=" background-color: rgb(235, 236, 125);">GRATUITA!</mark> 
-            <button class="botao">Quero participar!</button>
+            <button class="botao" href="#" data-scroll-nav="3">Cadastre-se</button>
         </div>
         <div class="col-sm">
           <img src="imagens/logo-programadora.svg" alt="Logo da programadora" class="img-responsive">
@@ -40,7 +41,7 @@
     </div>
   </div>
 
-  <div class="sobre" data-scroll-index='0'>
+  <div class="sobre" data-scroll-index='1'>
     <div class="container">
       <div class="row text-center">
         <div class="col-md-6 mb-50 text-center">
@@ -61,7 +62,7 @@
   </div>
 
 
-  <div class="ferramentas" data-scroll-index='1'>
+  <div class="ferramentas" data-scroll-index='2'>
     <div class="container">
       <div class="row text-center">
         <div class="col-md-12 ferramentas-titulo text-center">
@@ -82,11 +83,11 @@
     </div>
   </div>
 </main>
-  <div class="contact section-padding" data-scroll-index='2'>
+  <div class="contact section-padding" data-scroll-index='3'>
     <div class="container">
       <div class="row">
         <div class="col-md-12 section-title text-center">
-          <h3>Cadastre-se</h3>
+          <h3>Faça seu cadastro aqui!</h3>
           <p>Realize seu cadastro para receber o link das aulas e o material em pdf.</p>
           <span class="section-title-line"></span> </div>
           <div class="col-md-12 section-title text-center">
@@ -129,6 +130,49 @@
       </div>
     </div>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" ></script> 
+  <script src="js/scrollIt.min.js"></script> 
+  
+  <script>
+    $(window).on("scroll", function() {
+        var bodyScroll = $(window).scrollTop(),
+            navbar = $(".navbar");
+        if (bodyScroll > 130) {
+            navbar.addClass("nav-scroll");
+        } else {
+            navbar.removeClass("nav-scroll");
+        }
+    });
 
+    $.scrollIt({
+        easing: 'swing',
+        scrollTime: 700,
+        activeClass: 'active',
+        onPageChange: null,
+        topOffset: -63
+    });
+
+    $(window).on("load", function() {
+        var bodyScroll = $(window).scrollTop(),
+            navbar = $(".navbar");
+        $('.filtering').on('click', 'button', function() {
+            $(this).addClass('active').siblings().removeClass('active');
+        });
+    })
+
+    $(function() {
+        $(".cover-bg").each(function() {
+            var attr = $(this).attr('data-image-src');
+            if (typeof attr !== typeof undefined && attr !== false) {
+                $(this).css('background-image', 'url(' + attr + ')');
+            }
+        });
+        $("[data-background-color]").each(function() {
+            $(this).css("background-color", $(this).attr("data-background-color"));
+        });
+    });
+  
+  </script>
 </body>
 </html>
